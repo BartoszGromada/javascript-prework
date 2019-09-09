@@ -1,0 +1,22 @@
+div {
+	background-color: lightgrey;
+	margin: 50px auto;
+	box-shadow: 5px 5px 5px 5px;
+	max-width: 500px;
+	padding: 20px 55px;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	display:	-ms-flexbox;
+	display:	flex;
+}
+
+.scream {
+	font-weight: bold;
+	font-style: italic;
+}
+
+h2 {
+	text-align: right;
+	font-style: italic;
+	font-size: 20px;
+}
