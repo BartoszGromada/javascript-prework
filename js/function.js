@@ -4,11 +4,11 @@ console.log('Wylosowana liczba to: ' + randomNumber);
 
 let computerMove = 'nieznany ruch';
 
-if(randomNumber == 1){
+if(randomNumber == '1'){
   computerMove = 'kamień';
-} else if (randomNumber == 2) {
+} else if (randomNumber == '2') {
 	computerMove ='papier';
-} else if (randomNumber ==3) {
+} else if (randomNumber == '3') {
 	computerMove ='nożyczki';
 }
 
@@ -22,9 +22,9 @@ let playerMove = 'nieznany ruch';
 
 if(playerInput == '1'){
   playerMove = 'kamień';
-} else if (randomNumber == 2) {
+} else if (randomNumber == '2') {
 	computerMove ='papier';
-} else if (randomNumber ==3) {
+} else if (randomNumber == '3') {
 	computerMove ='nożyczki';
 }
 
