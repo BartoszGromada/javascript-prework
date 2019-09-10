@@ -45,27 +45,27 @@ printMessage('Twój ruch to: ' + playerMove);
 function displayResult(argComputerMove,argPlayerMove) {
   if (argComputerMove == kamień) && (argPlayerMove == papier) {
   	return 'Ty wygrywasz';
-} else if (argComputerMove == kamień) && (argPlayerMove == nożyczki) {
+} if (argComputerMove == kamień) && (argPlayerMove == nożyczki) {
 	return 'Komputer wygrywa';
-} else if (argComputerMove == kamień) && (argPlayerMove == kamień){
+} if (argComputerMove == kamień) && (argPlayerMove == kamień){
 	return 'Remis!';
-} else if (argComputerMove == kamień) && (argPlayerMove == nieznany ruch) {
+} if (argComputerMove == kamień) && (argPlayerMove == nieznany ruch) {
 	return 'brak/błędna wartość';
-} else if (argComputerMove == papier) && (argPlayerMove == papier) {
+} if (argComputerMove f papier) && (argPlayerMove == papier) {
 	return 'Remis!';
-} else if (argComputerMove == papier) && (argPlayerMove == nożyczki) {
+} if (argComputerMove == papier) && (argPlayerMove == nożyczki) {
 	return 'Ty wygrywasz';
-} else if (argComputerMove == papier) && (argPlayerMove == kamień){
+} if (argComputerMove == papier) && (argPlayerMove == kamień){
 	return 'Komputer wygrywa';
-} else if (argComputerMove == papier) && (argPlayerMove == nieznany ruch) {
+} if (argComputerMove == papier) && (argPlayerMove == nieznany ruch) {
 	return 'brak/błędna wartość';
-} else if (argComputerMove == nożyczki) && (argPlayerMove == papier) {
+} if (argComputerMove == nożyczki) && (argPlayerMove == papier) {
 	return 'Komputer wygrywa';
-} else if (argComputerMove == nożyczki) && (argPlayerMove == nożyczki) {
+} if (argComputerMove == nożyczki) && (argPlayerMove == nożyczki) {
 	return 'Remis !';
-} else if (argComputerMove == nożyczki) && (argPlayerMove == kamień) {
+} if (argComputerMove == nożyczki) && (argPlayerMove == kamień) {
 	return 'Ty wygrywasz';
-} else if (argComputerMove == nożyczki) && (argPlayerMove == nieznany ruch) {
+} if (argComputerMove == nożyczki) && (argPlayerMove == nieznany ruch) {
 	return 'brak/błędna wartość';
 }
   }
