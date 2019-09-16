@@ -83,6 +83,25 @@ console.log('Wynik: ' + result);
 
 printMessage(displayResult(argComputerMove,argPlayerMove));
 
+let A = 0;
+let B = 0;
+
+if (result == 'Jesteś zdany na moją łaskę!') {
+	A = A + 1;
+}	if (result == 'Przeżyłeś!') {
+	B = B + 1;
+}
+
+let ResultA = A;
+
+console.log('Wynik: ' + A + '-' + B);
+
+let sumResult = ('Wynik:' + A + '-' + B);
+
+clearResult();
+
+printResult(sumResult);
+
 };
 
 document.getElementById('play-rock').addEventListener('click', function(){
