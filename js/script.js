@@ -46,7 +46,7 @@ console.log('Wybrana przez użytkownika wartość to: ' + argPlayerMove);
 printMessage('Twój ruch to: ' + argPlayerMove);
 
 function displayResult(argComputerMove, argPlayerMove) {
-	if (argComputerMove === 'kamień' && argPlayerMove === 'papier') {
+	if (argComputerMove == 'kamień' && argPlayerMove == 'papier') {
 		return 'Ty wygrywasz!';
 } 	if (argComputerMove == 'kamień' && argPlayerMove == 'nożyczki') {
 		return 'Komputer wygrywa!';
