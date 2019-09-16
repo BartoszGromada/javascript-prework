@@ -29,7 +29,7 @@ let argComputerMove = getMoveName(randomNumber);
 
 console.log('Wylosowana przez komputer wartość to: ' + argComputerMove);
 
-printMessage('Mój ruch to: ' + argComputerMove);
+printMessage('Mój wybór to: ' + argComputerMove);
 
 /* let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.'); */
 
@@ -47,31 +47,31 @@ let argPlayerMove = getMoveName(playerInput);
 
 console.log('Wybrana przez użytkownika wartość to: ' + argPlayerMove);
 
-printMessage('Twój ruch to: ' + argPlayerMove);
+printMessage('Twój wybór to: ' + argPlayerMove);
 
 function displayResult(argComputerMove, argPlayerMove) {
 	if (argComputerMove == 'kamień' && argPlayerMove == 'papier') {
-		return 'Ty wygrywasz!';
+		return 'Przeżyłeś!';
 } 	if (argComputerMove == 'kamień' && argPlayerMove == 'nożyczki') {
-		return 'Komputer wygrywa!';
+		return 'Jesteś zdany na moją łaskę!';
 } 	if (argComputerMove == 'kamień' && argPlayerMove == 'kamień') {
-		return 'Remis!';
+		return 'Lets play again!';
 } 	if (argComputerMove == 'kamień' && argPlayerMove == 'nieznany ruch') {
 		return 'brak/błędna wartość!';
 } 	if (argComputerMove == 'papier' && argPlayerMove == 'papier') {
-		return 'Remis!';
+		return 'Lets play again';
 } 	if (argComputerMove == 'papier' && argPlayerMove == 'nożyczki') {
-		return 'Ty wygrywasz!';
+		return 'Przeżyłeś!';
 } 	if (argComputerMove == 'papier' && argPlayerMove == 'kamień') {
-		return 'Komputer wygrywa';
+		return 'Jesteś zdany na moją łaskę!';
 } 	if (argComputerMove == 'papier' && argPlayerMove == 'nieznany ruch') {
 		return 'brak/błędna wartość!';
 }	if (argComputerMove == 'nożyczki' && argPlayerMove == 'papier') {
-		return 'Komputer wygrywa!';
+		return 'Jesteś zdany na moją łaskę!';
 } 	if (argComputerMove == 'nożyczki' && argPlayerMove == 'nożyczki') {
-		return 'Remis!';
+		return 'Lets play again';
 } 	if (argComputerMove == 'nożyczki' && argPlayerMove == 'kamień') {
-		return 'Ty wygrywasz!';
+		return 'Przeżyłeś!';
 } 	if (argComputerMove == 'nożyczki' && argPlayerMove == 'nieznany ruch') {
 		return 'brak/błędna wartość!';
 }
