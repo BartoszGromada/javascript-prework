@@ -2,6 +2,7 @@ let randomNumber = Math.floor(Math.random() * 3 + 1);
 
 console.log('Wylosowana liczba to: ' + randomNumber);
 
+
 function getMoveName(randomNumber) {
 	if (randomNumber == 1) {
 	return 'kamień';
@@ -9,17 +10,19 @@ function getMoveName(randomNumber) {
 	return 'papier';
 }	if (randomNumber == 3) {
 	return 'nożyczki';
-}
+};
+
+console.log('wybrana opcja to: ' + getMoveName);
 
 let computerMove = getMoveName(randomNumber);
 
-/* if (randomNumber == 1) {
+if (randomNumber == 1) {
 	computerMove = 'kamień';
 }	else if (randomNumber == 2) {
 	computerMove = 'papier';
 }	else if (randomNumber == 3) {
 	computerMove = 'nożyczki';
-} */
+};
 
 printMessage('Mój ruch to: ' + computerMove);
 
@@ -35,7 +38,7 @@ if (playerInput == '1') {
 	playerMove = 'papier';
 }	else if (playerInput == '3') {
 	playerMove = 'nożyczki';
-}
+};
 
 printMessage('Twój ruch to: ' + playerMove);
 
@@ -50,5 +53,5 @@ if (computerMove == 'kamień' && playerMove == 'papier') {printMessage('Ty wygry
 } else if (computerMove == 'nożyczki' && playerMove == 'papier') {printMessage('Komputer wygrywa');
 } else if (computerMove == 'nożyczki' && playerMove == 'nożyczki') {printMessage('Remis !');
 } else if (computerMove == 'nożyczki' && playerMove == 'kamień') {printMessage('Ty wygrywasz');
-} else (computerMove == 'nożyczki' && playerMove == 'nieznany ruch') {printMessage('brak/błędna wartość');
+} else if (computerMove == 'nożyczki' && playerMove == 'nieznany ruch') {printMessage('brak/błędna wartość');
 }
