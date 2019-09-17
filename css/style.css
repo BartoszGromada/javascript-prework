@@ -1,0 +1,45 @@
+div {
+	background-color: rgba(256, 256, 256, 0.4);
+	margin: 50px auto;
+	box-shadow: 3px 3px 5px 5px red;
+	max-width: 500px;
+	padding: 20px 55px;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+	text-shadow: 3px 3px 5px red;
+	text-transform: uppercase;
+}
+
+#messages, #result {
+	text-align: center;
+	color: red;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+button {
+	border-radius: 50%;
+	height: 110px;
+	width: 110px;
+	background-color: red;
+	border: 0;
+	color: white;
+	font-size: 20px;
+	font-weight: 700;
+	box-shadow: 3px 3px 5px 1px white;
+	margin: 0 5px;
+}
+
+button:hover{
+	background-color: white;
+	color: red;
+	box-shadow: 3px 3px 5px 1px red;
+}
+
+.container {
+	background-image: url('https://i.ytimg.com/vi/SH8wDkqA_50/hqdefault.jpg');
+	background-size: all;
+}
