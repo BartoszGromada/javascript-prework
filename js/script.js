@@ -15,14 +15,14 @@ function playGame(playerInput) {
 
 	const result = displayResult(argComputerMove,argPlayerMove);
 
-	function getMoveName(moveNumber) {
+	function getMoveName() {
 		if (moveNumber === 1) {
 			return 'kamień';
 		}	
 		if (moveNumber === 2) {
 			return 'papier';
 		}	
-		if (moveumber === 3) {
+		if (moveNumber === 3) {
 			return 'nożyczki';
 		}	
 		return ('nieznany ruch')
