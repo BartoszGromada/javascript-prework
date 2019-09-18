@@ -75,13 +75,10 @@ typings/
 # nuxt.js build output
 .nuxt
 
-<<<<<<< HEAD
 # gatsby files
 .cache/
 public
 
-=======
->>>>>>> b57fb1c8505424fb8f18da6cee3e3980b003703d
 # vuepress build output
 .vuepress/dist
 
@@ -92,8 +89,4 @@ public
 .fusebox/
 
 # DynamoDB Local files
-<<<<<<< HEAD
 .dynamodb/
-=======
-.dynamodb/
->>>>>>> b57fb1c8505424fb8f18da6cee3e3980b003703d
