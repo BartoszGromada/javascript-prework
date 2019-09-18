@@ -9,11 +9,11 @@ function playGame(playerInput) {
 
 	const randomNumber = Math.floor(Math.random() * 3 + 1);
 
-	const argComputerMove = getMoveName(randomNumber);
+	const ComputerMove = getMoveName(randomNumber);
 
-	const argPlayerMove = getMoveName(playerInput);
+	const PlayerMove = getMoveName(playerInput);
 
-	const result = displayResult(argComputerMove,argPlayerMove);
+	const result = displayResult(ComputerMove,PlayerMove);
 
 	function getMoveName(moveNumber) {
 		if (moveNumber === 1) {
@@ -28,11 +28,11 @@ function playGame(playerInput) {
 		return ('nieznany ruch')
 	}
 
-	printMessage('Mój wybór to: ' + argComputerMove);
+	printMessage('Mój wybór to: ' + ComputerMove);
 
-	printMessage('Twój wybór to: ' + argPlayerMove);
+	printMessage('Twój wybór to: ' + PlayerMove);
 
-	function displayResult() {
+	function displayResult(argComputerMove, argPlayerMove) {
 		if ((argComputerMove === 'kamień' && argPlayerMove === 'papier') || 
 			(argComputerMove === 'papier' && argPlayerMove === 'nożyczki') || 
 			(argComputerMove === 'nożyczki' && argPlayerMove === 'kamień')) {
@@ -55,7 +55,7 @@ function playGame(playerInput) {
 		}
 	}
 
-	printMessage(displayResult(argComputerMove,argPlayerMove));
+	printMessage(displayResult(ComputerMove,PlayerMove));
 }
 
 document.getElementById('play-rock').addEventListener('click', function(){
@@ -70,6 +70,8 @@ document.getElementById('play-scissors').addEventListener('click', function(){
 	playGame(3);
 });
 
+let resultPlayGame = playGame(playerInput);
+
 function finnalyResult(fResult) {
 	if (fResult === 'Przeżyłeś!') {
 		return resultA = resultA + 1;
@@ -79,6 +81,6 @@ function finnalyResult(fResult) {
 	}
 }
 
-finnalyResult(displayResult());
+finnalyResult (resultPlayGame);
 
 printResult ('Wynik to: ' + resultA + ' - ' + resultB);
