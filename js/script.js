@@ -1,3 +1,8 @@
+'use strict';
+
+let resultA = 0;
+let resultB = 0;
+
 function playGame(playerInput) {
 
 	clearMessages();
@@ -10,7 +15,7 @@ function playGame(playerInput) {
 
 	const result = displayResult(argComputerMove,argPlayerMove);
 
-	function getMoveName() {
+	function getMoveName(randomNumber, playerInput) {
 		if (randomNumber === 1) {
 			return 'kamień';
 		}	
@@ -64,3 +69,14 @@ document.getElementById('play-paper').addEventListener('click', function(){
 document.getElementById('play-scissors').addEventListener('click', function(){
 	playGame(3);
 });
+
+function finnalyResult() {
+	if (result === 'Przeżyłeś!') {
+		return resultA = resultA + 1;
+	}
+	if (result === 'Jesteś zdany na moją łaskę!') {
+		return	resultB = resultB + 1;
+	}
+}
+
+printResult ('Wynik to: ' + resultA + ' - ' + resultB);
