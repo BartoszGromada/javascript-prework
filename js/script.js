@@ -15,7 +15,7 @@ function playGame(playerInput) {
 
 	const result = displayResult(argComputerMove,argPlayerMove);
 
-	function getMoveName() {
+	function getMoveName(moveNumber) {
 		if (moveNumber === 1) {
 			return 'kamień';
 		}	
@@ -70,13 +70,15 @@ document.getElementById('play-scissors').addEventListener('click', function(){
 	playGame(3);
 });
 
-function finnalyResult() {
-	if (result === 'Przeżyłeś!') {
+function finnalyResult(fResult) {
+	if (fResult === 'Przeżyłeś!') {
 		return resultA = resultA + 1;
 	}
-	if (result === 'Jesteś zdany na moją łaskę!') {
+	if (fResult === 'Jesteś zdany na moją łaskę!') {
 		return	resultB = resultB + 1;
 	}
 }
+
+finnalyResult(displayResult());
 
 printResult ('Wynik to: ' + resultA + ' - ' + resultB);
