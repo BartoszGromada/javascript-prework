@@ -41,6 +41,7 @@
 		} 	if (argComputerMove == 'kamień' && argPlayerMove == 'nieznany ruch' || argComputerMove == 'papier' && argPlayerMove == 'nieznany ruch' || argComputerMove == 'nożyczki' && argPlayerMove == 'nieznany ruch') {
 				return 'brak/błędna wartość!';
 		}
+		
 	};
 
 	const result = displayResult(argComputerMove,argPlayerMove);
