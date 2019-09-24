@@ -25,7 +25,7 @@ function playGame(playerInput) {
 		return ('nieznany ruch')
 	}
 
-	printMessage('Mój wybór to: ' + ComputerMove);
+	printMessage('Jigsaw wybrał: ' + ComputerMove);
 
 	printMessage('Twój wybór to: ' + PlayerMove);
 
@@ -82,14 +82,14 @@ function finnalyResult(fResult) {
 		resultB += 1;
 	}
 
-	printResult ('Gracz: ' + resultA + ' - Komputer: ' + resultB);
+	printResult ('Ty: ' + resultA + ' - Jigsaw: ' + resultB);
 
 	function display(argA, argB) {
 		if (argA === 5) { 
-			return alert('Uciekaj póki możesz');
+			return alert('Przejąłem 5 ciosów! Uciekaj póki możesz!');
 		}
 		if (argB ===5)	{
-			return alert('Jesteś mój już na zawsze');
+			return alert('Zemdlałeś z bólu! Zostaniesz już na zawsze ze mną!');
 		}
 	}
 
