@@ -52,22 +52,24 @@ function playGame(playerInput) {
 		}
 	}
 
-	printMessage(displayResult(ComputerMove,PlayerMove));
+	printMessage(result);
+	return result;
 }
 
 document.getElementById('play-rock').addEventListener('click', function(){
-  	playGame(1);
+  	const result = playGame(1);
+  	finnalyResult(result);
 });
 
 document.getElementById('play-paper').addEventListener('click', function(){
-	playGame(2);
+	const result = playGame(2);
+  	finnalyResult(result);
 });
 
 document.getElementById('play-scissors').addEventListener('click', function(){
-	playGame(3);
+	const result = playGame(3);
+  	finnalyResult(result);
 });
-
-console.log(playGame(3));
 
 function finnalyResult(fResult) {
 	if (fResult === 'Przeżyłeś!') {
@@ -79,5 +81,5 @@ function finnalyResult(fResult) {
 	printResult ('Wynik to: ' + resultA + ' - ' + resultB);
 }
 
-finnalyResult(playGame());
+
 
