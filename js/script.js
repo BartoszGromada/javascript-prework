@@ -5,15 +5,12 @@ let resultB = 0;
 
 function playGame(playerInput) {
 
+	const randomNumber = Math.floor(Math.random() * 3 + 1),
+		ComputerMove = getMoveName(randomNumber),
+		PlayerMove = getMoveName(playerInput),
+		result = displayResult(ComputerMove,PlayerMove);
+
 	clearMessages();
-
-	const randomNumber = Math.floor(Math.random() * 3 + 1);
-
-	const ComputerMove = getMoveName(randomNumber);
-
-	const PlayerMove = getMoveName(playerInput);
-
-	const result = displayResult(ComputerMove,PlayerMove);
 
 	function getMoveName(moveNumber) {
 		if (moveNumber === 1) {
@@ -70,17 +67,17 @@ document.getElementById('play-scissors').addEventListener('click', function(){
 	playGame(3);
 });
 
-let resultPlayGame = playGame(playerInput);
+console.log(playGame(3));
 
 function finnalyResult(fResult) {
 	if (fResult === 'Przeżyłeś!') {
-		return resultA = resultA + 1;
+		return resultA += 1;
 	}
 	if (fResult === 'Jesteś zdany na moją łaskę!') {
-		return	resultB = resultB + 1;
+		return	resultB += 1;
 	}
+	printResult ('Wynik to: ' + resultA + ' - ' + resultB);
 }
 
-finnalyResult (resultPlayGame);
+finnalyResult(playGame());
 
-printResult ('Wynik to: ' + resultA + ' - ' + resultB);
