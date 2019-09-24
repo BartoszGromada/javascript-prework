@@ -58,26 +58,30 @@ function playGame(playerInput) {
 
 document.getElementById('play-rock').addEventListener('click', function(){
   	const result = playGame(1);
+  	clearResult();
   	finnalyResult(result);
 });
 
 document.getElementById('play-paper').addEventListener('click', function(){
 	const result = playGame(2);
+	clearResult();
   	finnalyResult(result);
 });
 
 document.getElementById('play-scissors').addEventListener('click', function(){
 	const result = playGame(3);
+	clearResult();
   	finnalyResult(result);
 });
 
 function finnalyResult(fResult) {
 	if (fResult === 'Przeżyłeś!') {
-		return resultA += 1;
+		resultA += 1;
 	}
 	if (fResult === 'Jesteś zdany na moją łaskę!') {
-		return	resultB += 1;
+		resultB += 1;
 	}
+
 	printResult ('Wynik to: ' + resultA + ' - ' + resultB);
 }
 
