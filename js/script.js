@@ -82,7 +82,18 @@ function finnalyResult(fResult) {
 		resultB += 1;
 	}
 
-	printResult ('Wynik to: ' + resultA + ' - ' + resultB);
+	printResult ('Gracz: ' + resultA + ' - Komputer: ' + resultB);
+
+	function display(argA, argB) {
+		if (argA === 5) { 
+			return alert('Uciekaj póki możesz');
+		}
+		if (argB ===5)	{
+			return alert('Jesteś mój już na zawsze');
+		}
+	}
+
+	display(resultA, resultB);
 }
 
 
