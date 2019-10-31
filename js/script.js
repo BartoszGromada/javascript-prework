@@ -88,7 +88,7 @@ function finnalyResult(fResult) {
 		if (argA === 5) { 
 			return alert('Przejąłem 5 ciosów! Uciekaj póki możesz!');
 		}
-		if (argB ===5)	{
+		if (argB === 5)	{
 			return alert('Zemdlałeś z bólu! Zostaniesz już na zawsze ze mną!');
 		}
 	}
