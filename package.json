@@ -25,6 +25,7 @@
   "devDependencies": {
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.26.12",
+    "extend": "^3.0.2",
     "globstar": "^1.0.0",
     "kind-of": "^6.0.3",
     "minimist": "^1.2.5",
